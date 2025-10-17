@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', function(){
   const resSection = document.getElementById('result');
   const resName = document.getElementById('res-name');
   const resAge = document.getElementById('res-age');
+  const phoneInput = document.getElementById('phone');
+  const resPhone = document.getElementById('res-phone');
   const resetBtn = document.getElementById('reset-btn');
   const closeBtn = document.getElementById('close-result');
 
   function showError(input, message){
     const small = input.parentElement.querySelector('.error');
-    small.textContent = message;
+    small.textContent = message; 
     small.classList.add('visible');
     input.setAttribute('aria-invalid','true');
   }
@@ -54,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // mostrar resultado
     resName.textContent = name;
     resAge.textContent = ageInput.value;
+    resPhone.textContent = phoneInput.value;
     resSection.hidden = false;
     resSection.scrollIntoView({behavior:'smooth'});
   });
