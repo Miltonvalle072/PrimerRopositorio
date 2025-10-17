@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
   const resAge = document.getElementById('res-age');
   const phoneInput = document.getElementById('phone');
   const resPhone = document.getElementById('res-phone');
+  const addressInput = document.getElementById('address');
+  const resAddress = document.getElementById('res-address');
   const resetBtn = document.getElementById('reset-btn');
   const closeBtn = document.getElementById('close-result');
 
@@ -57,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
     resName.textContent = name;
     resAge.textContent = ageInput.value;
     resPhone.textContent = phoneInput.value;
+    resAddress.textContent = addressInput.value;
     resSection.hidden = false;
     resSection.scrollIntoView({behavior:'smooth'});
   });

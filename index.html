@@ -28,6 +28,12 @@
           <small class="error" aria-live="polite"></small>
         </div>
 
+        <div class="field">
+          <label for="address">Dirección</label>
+          <textarea id="address" name="address" rows="3" required minlength="5" placeholder="Calle, número, ciudad"></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
       <div class="actions">
         <button type="submit">Enviar</button>
         <button type="button" id="reset-btn">Limpiar</button>
@@ -39,6 +45,7 @@
       <p><strong>Nombre:</strong> <span id="res-name"></span></p>
       <p><strong>Edad:</strong> <span id="res-age"></span></p>
       <p><strong>Teléfono:</strong> <span id="res-phone"></span></p>
+  <p><strong>Dirección:</strong> <span id="res-address"></span></p>
       <button id="close-result">Cerrar</button>
     </section>
   </main>
